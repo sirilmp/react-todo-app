@@ -125,7 +125,7 @@ function App() {
             </div>
           </div>
           <div className="col-md-4 statusHeading">
-            <h2 align="center ">todos finished</h2>
+            <h2 align="center ">finished todos</h2>
             <div className="row">
               {toDos.map((initial) => {
                 if (initial.done && !initial.removed) {
@@ -183,7 +183,7 @@ function App() {
             </div>
           </div>
           <div className="col-md-4 statusHeading">
-            <h2 align="center"> Todos cancelled</h2>
+            <h2 align="center">cancelled todos</h2>
             <div className="row">
               {toDos.map((initial) => {
                 if (initial.removed) {
