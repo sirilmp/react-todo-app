@@ -20,7 +20,7 @@ function App() {
     <div className="app">
       <div className="container">
       <div className="heading">
-        <h1 align="center ">
+        <h1>
           <span>-</span>ToDo List<span>-</span>
         </h1>
       </div>
