@@ -1,38 +1,143 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Dancing+Script:wght@600&family=Nunito:wght@600&family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #020631;
+}
+
+.app .heading h1 {
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  text-transform: lowercase;
+  font-size: 50px;
+  color: #fec400;
+  margin-top: 20px;
+}
+.app .heading h1 span {
+  color: #fff;
+}
+.app .subHeading h2 {
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 20px;
+}
+.app .subHeading h2 span {
+  color: #fec400;
+  font-weight: bolder;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app .toDoInput {
+  margin-top: 30px;
+  width: 100%;
+  height: 55px;
+  background-color: #020631;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 6px;
+  padding: 5px;
+  border: none;
+  box-shadow: #00000047 1px 2px 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.app .toDoInput input {
+  width: 100%;
+  border-color:none;
+  outline-color: none;
+  border: 1px solid transparent !important;
+  background-color: #020631;
+  color: #fff;
+  margin-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .toDoInput input:focus{
+    outline: none;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+}
+.app .toDoInput input::placeholder {
+  color: #fff;
+}
+.app .toDoInput i {
+  cursor: pointer;
+  padding: 19px;
+  font-size: larger;
+  font-weight: bolder;
+  color: #ffff;
+  margin-right: 5px;
+  transition: ease-in 0.5s;
+}
+.app .toDoInput i:hover {
+  color: #fec400;
+  transition: ease-out 0.5s;
+}
+.hr {
+  width: 90%;
+  height: 10px;
+  background-color: hsla(46, 100%, 50%, 0.945);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+.statusHeading h2{
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+.statusHeading .toDoContent{
+    color: #fff;
+    text-transform: capitalize;
+}
+.statusHeading .toDoContent label{
+   margin-bottom: 15px;
+}
+.app .todos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.todo-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.app .todos .todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: 40px;
+  box-shadow: #00000047 1px 2px 6px;
+}
+.fa-times{
+    color: #fff;
+}
+.connectMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connectMe a{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #fec400;
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+.connectMe a:hover{
+    color: #fff;
 }
